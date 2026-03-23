@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Giochi della Classe 1E</title>
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #a29bfe;
+            --accent: #fd79a8;
+            --bg: #f0f3f7;
+            --text: #2d3436;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: -1px;
+        }
+
+        p.subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 90%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-bottom: 5px solid transparent;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: var(--accent);
+        }
+
+        .student-name {
+            font-weight: bold;
+            color: var(--primary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .game-title {
+            font-size: 1.4rem;
+            margin: 10px 0 20px 0;
+            color: var(--text);
+            min-height: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-play {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-play:hover {
+            background-color: var(--accent);
+        }
+
+        footer {
+            margin: 50px 0;
+            font-size: 0.9rem;
+            color: #636e72;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            header { padding: 40px 10px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>I Giochi della Classe 1E</h1>
+        <p class="subtitle">Creati con l'AI — Anno scolastico 2025/26</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <span class="student-name">Mario Rossi</span>
+            <h2 class="game-title">Gioco della Mitologia Greca</h2>
+            <a href="prova.html" class="btn-play">Gioca</a>
+        </div>
+
+        <div class="card">
+            <span class="student-name">Giulia Bianchi</span>
+            <h2 class="game-title">Quiz sui Pianeti</h2>
+            <a href="giulia.html" class="btn-play">Gioca</a>
+        </div>
+
+        <div class="card">
+            <span class="student-name">Luca Verdi</span>
+            <h2 class="game-title">Indovina il Numero</h2>
+            <a href="luca.html" class="btn-play">Gioca</a>
+        </div>
+
+        <div class="card">
+            <span class="student-name">Sofia Esposito</span>
+            <h2 class="game-title">Avventura Testuale: Roma Antica</h2>
+            <a href="sofia.html" class="btn-play">Gioca</a>
+        </div>
+
+        <div class="card">
+            <span class="student-name">Alessandro Neri</span>
+            <h2 class="game-title">Snake Evolution</h2>
+            <a href="snake.html" class="btn-play">Gioca</a>
+        </div>
+
+        <div class="card">
+            <span class="student-name">Elena Greco</span>
+            <h2 class="game-title">Labirinto Matematico</h2>
+            <a href="elena.html" class="btn-play">Gioca</a>
+        </div>
+
+        <div class="card">
+            <span class="student-name">Matteo Riva</span>
+            <h2 class="game-title">Memory della Tavola Periodica</h2>
+            <a href="matteo.html" class="btn-play">Gioca</a>
+        </div>
+
+        <div class="card">
+            <span class="student-name">Chiara Fontana</span>
+            <h2 class="game-title">Escape Room: Laboratorio AI</h2>
+            <a href="chiara.html" class="btn-play">Gioca</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Classe 1E - Liceo Scientifico
+    </footer>
+
+</body>
+</html>
